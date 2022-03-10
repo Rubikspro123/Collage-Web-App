@@ -1,0 +1,25 @@
+.copy_right_footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+body{
+    background-image: url("https://img.freepik.com/free-photo/blue-abstract-artistic-background_316696-792.jpg");
+}
+#title{
+    font-family: fantasy;
+    font-style: italic;
+    font-weight: 200;
+}
+#h4{
+    font-family: Times New Roman;
+    font-weight: 500;
+}
+img:hover{
+    border-radius: 140px;
+    box-shadow: 0 6px 8px 0 rgb(2, 2, 0.2);
+}
+.column{
+    display: inline;
+}
