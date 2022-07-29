@@ -26,7 +26,7 @@ function speak(){
     var utterThis = new SpeechSynthesisUtterance(speak_data);
 
     synth.speak(utterThis);
-    Webcam.attach(camera);
+   
 }
 Webcam.set({
     width:360,
@@ -35,3 +35,4 @@ Webcam.set({
     png_quality:90
 });
 camera = document.getElementById("camera");
+Webcam.attach('#camera');
