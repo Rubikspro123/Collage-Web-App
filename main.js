@@ -2,6 +2,12 @@ var SpeechRecognition = window.webkitSpeechRecognition;
 
 var recognition = new SpeechRecognition();
 
+startclick = ;
+
+function start_click(){
+startclick = ++1
+}
+
 function start(){
     document.getElementById("textbox").innerHTML = "";
     recognition.start();
@@ -16,6 +22,13 @@ recognition.onresult = function run (event) {
     document.getElementById("textbox").innerHTML = Content;
     console.log(Content);
     speak();
+}
+
+function take_snapshot(){
+    Webcam.snap(function(data_uri){
+        document.getElementById("result" + startclick).innerHTML = '<img id="captured_image" src="' + data_uri + '"/>';
+
+    });
 }
 
 function speak(){
